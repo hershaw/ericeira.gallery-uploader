@@ -1,6 +1,7 @@
 on:
-  issue_comment:
-    types: [created, deleted]
+  issues:
+    types:
+      - created
 
 jobs:
   bugfixer:
