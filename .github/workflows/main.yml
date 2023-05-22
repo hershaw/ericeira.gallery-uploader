@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Inputs
-        run: echo ${{ github.event.issue.body }}
+        run: echo "${{ github.event.issue.body }}"
       - name: Bugfixer
         id: bugfixer
         uses: hershaw/bugfixer@v22
