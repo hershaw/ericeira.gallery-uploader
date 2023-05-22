@@ -1,5 +1,7 @@
 # ericeira.gallery-uploader
 
+Utility script to upload to s3 for the https://ericeira.gallery website.
+
 For example:
 
 ```bash
