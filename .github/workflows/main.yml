@@ -12,4 +12,4 @@ jobs:
         uses: actions/checkout@v3
       - name: Bugfixer
         id: bugfixer
-        uses: hershaw/bugfixer@v17
+        uses: hershaw/bugfixer@v18
