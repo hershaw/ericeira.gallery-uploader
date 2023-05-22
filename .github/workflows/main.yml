@@ -1,15 +1,14 @@
-on: [push]
+on:
+  issue_comment:
+    types: [created, deleted]
 
 jobs:
-  hello_world_job:
+  bugfixer:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Use AI to fix simple bugs and make a PR
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Hello world action step
-        id: hello
+      - name: Bugfixer
+        id: bugfixer
         uses: hershaw/bugfixer@v6
-      # Use the output from the `hello` step
-#       - name: Get the output time
-#         run: echo "The time was ${{ steps.hello.outputs.time }}"
