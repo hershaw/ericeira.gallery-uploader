@@ -19,7 +19,7 @@ def valid_s3_url(url):
     parsed_url = urlparse(url)
     if not parsed_url.scheme == "s3" or not parsed_url.netloc or not parsed_url.path:
         raise argparse.ArgumentTypeError(f"{url} is not a valid s3 URL.")
-    return url
+    return url.rstrip('/')
 
 
 def create_s3_client(aws_profile_name):
