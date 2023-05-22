@@ -12,4 +12,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Bugfixer
         id: bugfixer
-        uses: hershaw/bugfixer@v18
+        uses: hershaw/bugfixer@v19
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
