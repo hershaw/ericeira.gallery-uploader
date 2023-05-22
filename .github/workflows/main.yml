@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: hershaw/bugfixer@v1
+        uses: hershaw/bugfixer@v2
       # Use the output from the `hello` step
 #       - name: Get the output time
 #         run: echo "The time was ${{ steps.hello.outputs.time }}"
